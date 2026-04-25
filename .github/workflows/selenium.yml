@@ -2,10 +2,10 @@ name: Selenium Tests Suite with Allure Report
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
