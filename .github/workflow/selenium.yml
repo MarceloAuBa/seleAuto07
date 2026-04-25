@@ -1,18 +1,16 @@
 name: Selenium Tests Suite with Allure Report
-
 on:
   push:
-    branches: [ "master" ]
+    branches: [ master ]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Java 21
+      - name: Set up JDK 21
         uses: actions/setup-java@v5
         with:
           java-version: '21'
